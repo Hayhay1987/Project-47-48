@@ -58,7 +58,7 @@ function preload() {
 function setup() {
   createCanvas(1200, 1200)
   frameRate(100)
-  speed = 1.75
+  speed = 2.5
   taskCashMultBtn = createButton("Task cash multiplier")
   taskCashMultBtn.position(0, 125)
   taskCashMultBtn.mouseClicked(taskCashMultUpgrade)
@@ -124,7 +124,6 @@ function setup() {
 }
 
 function draw() { 
-  experience += 100
   background(220)
   frameRate(60)
   text(`Framerate: ${getFrameRate()}`, 50, 50)
